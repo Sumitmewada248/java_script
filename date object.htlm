@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+
+    const d=new Date()
+    document.write("<h1>",d,"</h1>");
+
+    //given parameter to print dates
+    const dl=new Date(2015,6)
+    document.write("<h1>",dl,"</h1>");
+
+    //print any date use mili seconds
+    const du=new Date(1274562554445);
+    document.write("<h1>",du,"</h1>");
+
+    //print by given date
+    const dh=new Date("2023-10-25");
+    document.write("<h1>",dh,"</h1>");
+
+    //print year
+    const dg=d.getFullYear()
+    document.write("<h1> Year :",dg,"</h1>");
+    
+    //Print month
+    const dn=d.getMonth()
+   // document.write("<h1>",dn,"</h1>");
+    const ans=["january","February","march","april","may","June","july","august","september","october","november","december"];
+    document.write("<h1> Month :",ans[dn],"</h1>");
+
+    
+
+    const an=d.getDate();
+    document.write("<h1> Date :",an,"</h1>");
+
+    const raj=d.getHours();
+    document.write("<h1> Hours :",raj,"</h1>");
+
+    const ram=d.getMinutes();
+    document.write("<h1> Minute :",ram,"</h1>");
+
+    const ra=d.getSeconds();
+    document.write("<h1> Second :",ra,"</h1>");
+
+    const r=d.getMilliseconds();
+    document.write("<h1> Milisec :",r,"</h1>");
+
+    const s=d.getDay();
+   // document.write("<h1> day :",s,"</h1>");
+   
+    const day=["sunday","monday","tuesday","wednesday","thursday","friday","saturday"];
+    document.write("<h1> Day :",day[s],"</h1>");
+
+    // current millisecond
+     const sa=d.getTime();
+     document.write("<h1> Time in milisecond :",sa,"</h1>")
+
+ </script>
+</body>
+</html>
