@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+       // power of any number
+    const ans= Math.pow(2,3);
+    document.write("<h1>",ans,"</h1>");
+    const ans1= Math.pow(5,4);
+    document.write("<h1>",ans1,"</h1>");
+
+    // square root of any number
+    const ans2= Math.sqrt(10);
+    document.write("<h1>",ans2,"</h1>");
+    // take absulute value of any no take only + in values;
+    const ans3= Math.abs(-10.5);
+    document.write("<h1>",ans3,"</h1>");
+    const ans4= Math.abs(-99);
+    document.write("<h1>",ans4,"</h1>");
+
+  // find 1 to 100
+
+  function display(){
+   // const ans5= Math.random();
+  // document.write("<h1>",ans5,"</h1>");
+  // const ans6=Math.floor((ans5*100)+1);
+ //  document.write("<h1>",ans6,"</h1>");
+
+   let str="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%&*";
+   let string= str.length;
+
+  // document.write("<h1>",string,"</h1>");
+   let mystr="";
+
+   for(var i=0;i<=7;i++)
+   {
+    var mynum=Math.floor(Math.random()*69);
+    mystr+=str.charAt(mynum);
+   }
+   document.write("<h1>Random Passoward :",mystr,"</h1>");
+
+  }
+
+ </script>
+ <button onclick="display()">click here</button>
+</body>
+</html>
