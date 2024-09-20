@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+        margin: 0;
+    }
+    
+    #box {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    #txt {
+        width: 95%;
+        height: 50px;
+        font-size: 24px;
+        text-align: right;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    #buttons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+    
+
+    
+    button {
+        padding: 20px;
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+        background-color: #f0f0f0;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #e0e0e0;
+    }
+</style>
+    
+    <script>
+        function del()
+        {
+            let a=document.getElementById('txt').value;
+            let mylen=a.length;
+            let ans=a.slice(0,mylen-1);
+            document.getElementById('txt').value=ans;
+        }
+    </script>
+</head>
+
+<body>
+    <!-- calculator program -->
+
+    <div id="box">
+        <input type="text" id="txt">
+
+        <div id="buttons">
+        <button id="btn1" onclick="document.getElementById('txt').value+=document.getElementById('btn1').innerHTML">1</button>
+        <button id="btn2" onclick="document.getElementById('txt').value+=document.getElementById('btn2').innerHTML">2</button>
+        <button id="btn3" onclick="document.getElementById('txt').value+=document.getElementById('btn3').innerHTML">3</button>
+        <button id="btn4" onclick="document.getElementById('txt').value+=document.getElementById('btn4').innerHTML">4</button>
+        <button id="btn5" onclick="document.getElementById('txt').value+=document.getElementById('btn5').innerHTML">5</button>
+        <button id="btn6" onclick="document.getElementById('txt').value+=document.getElementById('btn6').innerHTML">6</button>
+        <button id="btn7" onclick="document.getElementById('txt').value+=document.getElementById('btn7').innerHTML">7</button>
+        <button id="btn8" onclick="document.getElementById('txt').value+=document.getElementById('btn8').innerHTML">8</button>
+        <button id="btn9" onclick="document.getElementById('txt').value+=document.getElementById('btn9').innerHTML">9</button>
+        <button id="btn0" onclick="document.getElementById('txt').value+=document.getElementById('btn0').innerHTML">0</button>
+        <button id="btn+" onclick="document.getElementById('txt').value+=document.getElementById('btn+').innerHTML">+</button>
+        <button id="btn-" onclick="document.getElementById('txt').value+=document.getElementById('btn-').innerHTML">-</button>
+        <button id="btn*" onclick="document.getElementById('txt').value+=document.getElementById('btn/').innerHTML">*</button>
+        <button id="btn/" onclick="document.getElementById('txt').value+=document.getElementById('btn*').innerHTML">/</button>
+        <button onclick="document.getElementById('txt').value+=eval(document.getElementById('txt').value) ">=</button>
+         <button id="btn00" onclick="document.getElementById('txt').value+=document.getElementById('btn0').innerHTML">00</button>
+         <button  onclick="document.getElementById('txt').value=''">AC</button>
+        <button onclick="del()">x</button>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+</html>
