@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Spread operator== ... or three dots -->
+     <script>
+        const a=[1,2,3];
+        const b=[4,5,6];
+        const d=[7,8,9];
+         const c=[...a,...b,...d];
+        console.log(c);
+    
+        const num1=[1,2,3,4,5,6,7];
+        const [a2,b2,c2,...rest]=num1;
+        console.log(a2);
+        console.log(b2);
+        console.log(c2);
+        console.log(rest);
+
+        const student2={
+            "rollno":121,
+            "Name":"raj",
+            "city":"bhopal",
+            "grade":"A"
+        }
+        const student1={
+            "rollno1":155,
+            "Name1":"sanju",
+            "city1":"detail",
+            "grade1":"b"
+        }
+        const mydata={...student2,...student1};
+        console.log(mydata);
+
+        const data=["we","are","the","student","of","cybrom"];
+        console.log(data)
+        console.log(...data);
+
+
+     </script>
+
+<!-- destructor method -->
+<script>
+    const num=[1,2,3];
+    const [ a1, b1, c1 ]=num;
+    console.log(a1);
+    console.log(b1);
+    console.log(c1);
+
+    const student={"rollno":120,"name":"sumit","city":"bhopal"};
+    const {rollno,name,city}=student
+    console.log(rollno);
+    console.log(name);
+    console.log(city);
+</script>
+
+
+</body>
+</html>
