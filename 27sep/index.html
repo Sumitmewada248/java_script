@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="yellow">
+    <!-- bom  browser object model -->
+
+    <script>
+        let myw;
+        function myopen(){
+            myw=window.open("https://www.google.com/search?q=weather&rlz=1C1RXQR_enIN1060IN1060&oq=&gs_lcrp=EgZjaHJvbWUqCQgBECMYJxjqAjIJCAAQIxgnGOoCMgkIARAjGCcY6gIyCQgCECMYJxjqAjIJCAMQIxgnGOoCMg8IBBAuGCcYxwEY6gIY0QMyCQgFECMYJxjqAjIJCAYQIxgnGOoCMgkIBxAjGCcY6gLSAQkxODY1ajBqMTWoAgiwAgE&sourceid=chrome&ie=UTF-8","800","width=600 ,height=300")
+
+        }
+
+        function myclose(){
+            myw.close();
+        }
+    </script>
+
+    <a href="bom.html"> Home Page</a>
+    <a href="about.html"> Home Page</a>
+
+   <h1> welcome my page</h1>
+   <button onclick="myopen()"> open window</button>
+   <button onclick="myclose()"> close window</button>
+</body>
+</html>
