@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head >
+<script>
+    // form validation or fill the require filed
+  /*  function validation()
+    {
+        let name=document.f1.nm.value;
+        let city=document.f1.ct.value;
+
+        if(name=="")
+        {
+            alert("pleaase enter your name");
+            document.f1.nm.focus();
+            return false;
+        }
+
+        if(city=="")
+        {
+            alert("pleaase enter your city");
+            document.f1.ct.focus();
+            return false;
+        }
+    }*/
+
+    function validation()
+    {
+        let name=document.f1.nm.value;
+        let age=document.f1.age.value;
+        let age1=parseInt(age);
+        let pass1=document.f1.pass1.value;
+        let pass2=document.f1.pass2.value;
+        let fees=document.f1.fs.value;
+        let fees1=parseInt(fees);
+
+        if(name==""){
+            alert("Please enter your name!!!");
+            document.f1.nm.focus();
+            return false;
+        }
+        if(age==""){
+            alert("Please enter your age!!!")
+            document.f1.age.focus();
+            return false;
+        }
+        if(isNaN(age1)){
+            alert("Please enter numeric value!!!")
+            document.f1.age.value="";
+            document.f1.age.focus();
+            return false;
+        }
+
+
+        if(pass1==""){
+            alert("Please Enter Password !!");
+            document.f1.pass1.focus();
+            return false;
+        }
+        if(pass2==""){
+            alert("Please Re-Enter Password !!");
+            document.f1.pass2.focus();
+            return false;
+        }
+        if(pass1!=pass2){
+            alert("Password does not match !!");
+            document.f1.pass1.value="";
+            document.f1.pass2.value="";
+            document.f1.pass1.focus();
+            return false;
+        }
+        if(fees==""){
+            alert("Please Enter your fees !!");
+            document.f1.fs.focus();
+            return false;
+        }
+        if(isNaN(fees1)){
+            alert("Please Enter Numeric fees !!");
+            document.f1.fs.value="";
+            document.f1.fs.focus();
+            return false;
+        }
+        if(fees1<=45000){
+            alert("Your fees equal or more than 45000 !");
+            document.f1.fs.value="";
+            document.f1.fs.focus();
+            return false;
+        }
+    }
+</script>
+<body>
+    
+    <!-- <h1 >Student Form</h1>
+  <form name="f1" method="post" action="save.html" onsubmit=" return validation();">
+    Enter Name : <input type="text" name="nm"><br>
+    Enter City : <input type="text" name="ct"><br>
+  <button>save</button>
+  </form> -->
+  <form name="f1" method="post" action="save.html" onsubmit=" return validation();">
+  Enter Name :&nbsp; &nbsp;<input type="" name="nm"><br>
+  Enter Age : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="age"><br>
+  Enter Passowrd : &nbsp;&nbsp;<input type="text" name="pass1"><br>
+  Re Enter Passowrd : <input type="text" name="pass2"><br>
+  Enter Fess : &nbsp;&nbsp;&nbsp;<input type="text" name="fs"><br>
+  <button>data save</button>
+ 
+</form>
+</body>
+</html>
