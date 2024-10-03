@@ -1,0 +1,32 @@
+{
+    "students": [
+      {
+        "id": "1",
+        "rollno": 121,
+        "name": "sachin",
+        "city": "Bhopal",
+        "fees": 45000
+      },
+      {
+        "id": "2",
+        "rollno": 122,
+        "name": "Sanjay",
+        "city": "Inodre",
+        "fees": 47000
+      },
+      {
+        "id": "3",
+        "rollno": 122,
+        "name": "Sanjay",
+        "city": "Inodre",
+        "fees": 45600
+      },
+      {
+        "id": "7e76",
+        "rollno": "125",
+        "name": "sumit",
+        "city": "bilaspur",
+        "fees": "4520"
+      }
+    ]
+  }
