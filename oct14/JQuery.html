@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="jquery.js"></script>
+
+    <script>
+          // its basic  syntax written always
+        $(document).ready(function(){
+          
+
+            $(".b1").click(function(){
+                $("p").hide(4000);
+            })
+
+            // double click is dblclick use 
+            $("#btn2").dblclick(function(){
+                $("p").hide(4000);
+            })
+
+            // mouse enter use to on mouse
+            $("#btn1").mouseenter(function(){
+                $("p").hide(4000);
+            })
+
+            //mouseleave use to leave the mouse in that place
+            $("#btn2").mouseleave(function(){
+                $("p").hide(4000);
+            })
+
+            //mousedown  use any button click run the function
+            $("#btn3").mousedown(function(){
+                $("p").hide(4000);
+            })
+
+            // mouseup is use to leave any button 
+            $("#btn2").mouseup(function(){
+                $("p").hide(4000);
+            })
+        })
+        
+        
+        </script>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est adipisci sunt ipsam veritatis perspiciatis sapiente. Quos, obcaecati corrupti deleniti minima omnis laborum pariatur quo quas iure cum, aut ab perferendis.</p>
+
+        <button id="btn1" class="b1">click here</button>
+        <button id="btn2" class="b2">click </button>
+        <button id="btn3" class="b1">please click</button>
+
+</body>
+</html>
