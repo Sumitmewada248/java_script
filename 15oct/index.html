@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="jquery.js"></script>
+<script>
+    $(document).ready(function(){
+
+
+        $("p").click(function(){
+            $(this).hide(2000);})
+            
+            $("button").click(function(){
+                $("#box").toggle(2000);})
+                
+            
+
+        $("input").focus(function(){
+            $(this).css("background-color","yellow");
+        })
+
+        $("input").blur(function(){
+            $(this).css("background-color","white");
+        })
+        
+    })
+</script>
+<body>
+    
+     <p>Welcome to cybrome bhopal!!</p>
+     <p>We are web developer from Bhopal</p>
+     <p>Hello friends! welcome to IT World</p>
+     <p>We learn Jave Script and React js Technology</p>
+
+     <hr><hr>
+     <hr>
+
+Enter name: <input type="text"  id=""><br>
+Enter city: <input type="text"  id=""><br>
+Enter class: <input type="text"  id=""><br>
+Enter mobile: <input type="text"  id=""><br>
+
+<hr><hr>
+<button>toggle box</button>
+<div id="box">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dolorem fugit distinctio eaque pariatur deleniti exercitationem eos, magni ducimus eligendi et dicta provident architecto voluptate numquam autem. Esse, voluptas. Assumenda.
+</div>
+
+</body>
+</html>
