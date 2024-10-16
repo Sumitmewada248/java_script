@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <style>
+        #box{
+            width: 300px;
+            padding: 20px;
+            border: 3px solid red;
+            background-color: palevioletred;
+            display: none;
+        }
+
+
+        #box1{
+            width: 300px;
+            padding: 20px;
+            border: 3px solid red;
+            background-color: palevioletred;
+        }
+
+        #box2{
+            width: 500px;
+            padding: 20px;
+            border: 3px solid red;
+            background-color: palevioletred;
+        }
+    </style>
+</head>
+<body>
+
+            <!-- Fade In -->
+        <button id="btn">Fade In</button>
+        <div id="box">
+            <img src="i-1.jpg" alt="" width="300px">
+        </div>
+
+        <script>
+            $(document).ready(function(){
+                $("#btn").click(function(){
+                    $("#box").fadeIn(7000);
+                })
+            })
+        </script>
+
+        <hr><hr>
+
+        <!-- Fade Out -->
+         <button id="btn1">Fade Out</button>
+         <div id="box1">
+            <img src="i-1.jpg" alt="" width="300px">
+         </div>
+
+         <script>
+            $(document).ready(function(){
+                $("#btn1").click(function(){
+                    $("#box1").fadeOut(8000);
+                })
+            })
+         </script>
+
+         <hr><hr>
+
+            <button id="btn2">Fade Toggle</button>
+            <div id="box2"><img src="i-1.jpg" alt="" width="500px"></div>
+            <script>
+                $(document).ready(function(){
+                    $("#btn2").click(function(){
+                        $("#box2").fadeToggle(9000);
+                    })
+                })
+            </script>
+    
+</body>
+</html>
